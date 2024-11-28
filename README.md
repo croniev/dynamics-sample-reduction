@@ -17,3 +17,9 @@ Dependencies:
 | 7i_conv_pool_relu | 49.67% | 4*4 |
 | 6i_conv_pool_tanh | 31.1% | 5*5 |
 | 6i_conv_pool_relu | 53.3% | 5*5 |
+| 7i_conv_pool_lrelu_05 | 49.81% | 4*4 |
+| 7i_conv_pool_rrelu | 49.79% | 4*4 |
+| 6i_conv_pool_lrelu_05 | 53.18% | 5*5 |
+| 6i_conv_pool_rrelu | 53.17% | 5*5 |
+| 6i_conv_pool_lrelu_1 | 53.21% | 5*5 |
+| 6i_conv_pool_lrelu_025 | 53.18% | 5*5 |
