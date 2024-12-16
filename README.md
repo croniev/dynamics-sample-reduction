@@ -37,7 +37,10 @@ Transforming the results back to image does not significantly change performance
 | 6i_conv_mixedpool02_relu | 35.14% | 5*5 |
 
 ## Results Dynamic PCA
+For these experiments I used only the training data. For testing, I split it at the 85% mark.
 | Parameters | Accuracy | Input Size |
 |------------|----------|------------|
 | unreduced | 97.92% | 28*28 |
-| pca15_15i_relu | 63.33% | 15 |
+| pca15_15i_relu (1/3 data) | 63.33% | 15 |
+| pca15_15i_relu | 88.11% | 15 |
+| pca15_15i_relu_pool2 (1/3 data) | 88.5% | 15 |
