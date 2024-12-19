@@ -37,10 +37,19 @@ Transforming the results back to image does not significantly change performance
 | 6i_conv_mixedpool02_relu | 35.14% | 5*5 |
 
 ## Results Dynamic PCA
-For these experiments I used only the training data. For testing, I split it at the 85% mark.
-| Parameters | Accuracy | Input Size |
-|------------|----------|------------|
-| unreduced | 97.92% | 28*28 |
-| pca15_15i_relu (1/3 data) | 63.33% | 15 |
-| pca15_15i_relu | 88.11% | 15 |
-| pca15_15i_relu_pool2 (1/3 data) | 88.5% | 15 |
+For these experiments I used only the training data. For testing, I split it at the 85% mark.  
+Datasets with `pool` were converted back to image space before PCA. The number indicates how many pool-separated phases there were for each sample reduction (i.e. `pool1` = no pool, but `pool1` does PCA in img space and no pool does PCA in freq space).  
+| Parameters | Accuracy | Input Size | Amount of Data |
+|------------|----------|------------|----------------|
+| unreduced | 97.92% | 28*28 | 1/1 |
+| pca15_15i_relu | 88.11% | 15 | 1/1 |
+| pca15_15i_relu | 84.03% | 15 | 1/3 |
+| pca15_15i_relu_pool1 | 94.64% | 15 | 1/1 |
+| pca15_15i_relu_pool1 | 93.33% | 15 | 1/3 |
+| pca15_15i_relu_pool2 | 88.5% | 15 | 1/3 |
+| pca15_15i_relu_pool3 | 71% | 15 | 1/3 |
+| pca15_15i_relu_pool4 | 55.47% | 15 | 1/3 |
+| pca15_15i_tanh | 79.5% | 15 | 1/3 |
+| pca15_15i_tanh_pool1 | 90.8% | 15 | 1/3 |
+| pca15_15i_tanh_pool2 | 83.97% | 15 | 1/3 |
+| pca15_15i_tanh_pool3 | 61.93% | 15 | 1/3 |
