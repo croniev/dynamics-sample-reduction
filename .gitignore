@@ -2,3 +2,5 @@
 data/MNIST/raw
 freq_RedData
 image_RedData
+*.ju.py
+Untitled*
