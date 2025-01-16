@@ -46,6 +46,8 @@ Datasets with `pool` were converted back to image space before PCA. The number i
 | pca15_15i_relu | 84.03% | 15 | 1/3 |
 | pca15_15i_relu_pool1 | 94.64% | 15 | 1/1 |
 | pca15_15i_relu_pool1 | 93.33% | 15 | 1/3 |
+| pca15_15i_relu_pool1_nodoppler | 93.33% | 15 | 1/3 |
+| pca15_15i_relu_pool1_nodoppler_nofact | 93.5% | 15 | 1/3 |
 | pca15_15i_relu_pool2 | 88.5% | 15 | 1/3 |
 | pca15_15i_relu_pool3 | 71% | 15 | 1/3 |
 | pca15_15i_relu_pool4 | 55.47% | 15 | 1/3 |

@@ -1,6 +1,5 @@
 .ipynb_checkpoints
 data/MNIST/raw
-freq_RedData
+# freq_RedData
 image_RedData
-*.ju.py
 Untitled*
